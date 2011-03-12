@@ -9,3 +9,4 @@ Gemfile.lock
 oily_png-*.gem
 .DS_Store
 /spec/resources/_*.*
+nbproject/private
