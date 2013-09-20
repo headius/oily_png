@@ -1,5 +1,5 @@
 require 'chunky_png'
-require 'oily_png/oily_png'
+require 'oily_png/oily_png_ext'
 
 module OilyPNG
   class Canvas < ChunkyPNG::Canvas

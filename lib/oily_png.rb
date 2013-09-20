@@ -14,7 +14,7 @@ module OilyPNG
 end
 
 require 'oily_png/version'
-require 'oily_png/oily_png'
+require 'oily_png/oily_png_ext'
 require 'oily_png/canvas'
 
 # Include mixin into ChunkyPNG
