@@ -6,6 +6,7 @@ module OilyPNG
     extend OilyPNG::PNGDecoding
     include OilyPNG::PNGEncoding
     include OilyPNG::Operations
+    include OilyPNG::Resampling
   end
   
   module Color
