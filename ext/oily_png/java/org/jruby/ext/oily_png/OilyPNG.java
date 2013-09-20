@@ -10,10 +10,12 @@ public class OilyPNG {
         RubyModule pngEncoding = oilyPng.defineModuleUnder("PNGEncoding");
         RubyModule color = oilyPng.defineModuleUnder("Color");
         RubyModule operations = oilyPng.defineModuleUnder("Operations");
+        RubyModule resampling = oilyPng.defineModuleUnder("Resampling");
 
         pngDecoding.defineAnnotatedMethods(PNGDecoding.class);
-        pngDecoding.defineAnnotatedMethods(PNGEncoding.class);
-        pngDecoding.defineAnnotatedMethods(Color.class);
-        pngDecoding.defineAnnotatedMethods(Operations.class);
+        pngEncoding.defineAnnotatedMethods(PNGEncoding.class);
+        color.defineAnnotatedMethods(Color.class);
+        operations.defineAnnotatedMethods(Operations.class);
+        operations.defineAnnotatedMethods(Resampling.class);
     }
 }
